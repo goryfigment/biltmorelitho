@@ -62,7 +62,7 @@ ROOT_URLCONF = 'biltmorelitho.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/src')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates/dist')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
