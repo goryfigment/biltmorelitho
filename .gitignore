@@ -98,4 +98,3 @@ ENV/
 .idea/
 
 node_modules
-dist
