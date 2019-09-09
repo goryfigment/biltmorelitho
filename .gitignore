@@ -97,4 +97,8 @@ ENV/
 .idea
 .idea/
 
+# Files I don't want git to see
 node_modules
+settings_secret.py
+migrations
+
