@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Biltmore Litho</title>
-    <link rel='shortcut icon' type='image/x-icon' href="{% static 'bundle/assets/whey2ez/whey2ez.ico' %}" />
+    <link rel='shortcut icon' type='image/x-icon' href="{% static 'bundle/assets/logo.ico' %}" />
 </head>
 <body>
-
+    <%= require('html-loader!./partial/header.html') %>
     <div id="first-wrapper">
-        <nav id="nav-wrapper">
-            <a id="login-button" href="/login/">Login</a>
-            <a id="register-button" href="/register/">Register</a>
-        </nav>
+{#        <nav id="nav-wrapper">#}
+{#            <a id="login-button" href="/login/">Login</a>#}
+{#            <a id="register-button" href="/register/">Register</a>#}
+{#        </nav>#}
 
         <div id="home-header">
-            <img src="templates/bundle/assets/home.jpg" />
+            <img src="{% static 'bundle/assets/home.jpg' %}" />
             <h1 id="home-title">Biltmore Litho</h1>
             <p id="home-description">Quality Printing</p>
+            <div id="button-wrapper">
+                <button id="promotional-button">Promotional</button>
+                <button id="quote-button">Get a Quote</button>
+            </div>
         </div>
 
         <div id="home-points">
@@ -37,6 +41,45 @@
                 <div class="icon-description">Prompt quality work.</div>
             </div>
         </div>
+
+        <div id="service-wrapper">
+            <div id="service">
+                <h2>Services</h2>
+            </div>
+            <div id="cards">
+                <span class="icon"><i class="far fa-address-card"></i></span>
+                <h2>Business Cards</h2>
+            </div>
+            <div id="brochures">
+                <span class="icon"><i class="far fa-map"></i></span>
+                <h2>Brochures</h2>
+            </div>
+            <div id="newsletters">
+                <span class="icon"><i class="far fa-newspaper"></i></span>
+                <h2>Newsletters</h2>
+            </div>
+            <div id="stationery">
+                <span class="icon"><i class="far fa-folder"></i></span>
+                <h2>Stationery</h2>
+            </div>
+            <div id="forms">
+                <span class="icon"><i class="far fa-file-alt"></i></span>
+                <h2>Continuous & NCR Forms</h2>
+            </div>
+            <div id="booklets">
+                <span class="icon"><i class="fas fa-book"></i></span>
+                <h2>Booklets</h2>
+            </div>
+            <div id="pamphlets">
+                <span class="icon"><i class="fas fa-book-open"></i></span>
+                <h2>Pamphlets</h2>
+            </div>
+            <div id="printing">
+                <span class="icon"><i class="fas fa-print"></i></span>
+                <h2>Digital & Offset Printing</h2>
+            </div>
+        </div>
+        <%= require('html-loader!./partial/footer.html') %>
     </div>
 
 </body>

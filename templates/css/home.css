@@ -122,3 +122,54 @@
     line-height: 20px;
 }
 
+#service-wrapper {
+    border: 3px solid white;
+}
+
+#service-wrapper div {
+    position: relative;
+    border-bottom: 2px white solid;
+}
+
+#service-wrapper .icon {
+    position: absolute;
+    font-size: 70px;
+    top: 23px;
+    left: 75px;
+    text-align: center;
+    width: 100px;
+}
+
+#service-wrapper h2 {
+    text-align: center;
+    margin: 0;
+    height: 125px;
+    line-height: 125px;
+}
+
+#service {
+    background: #546dce;
+    height: 166px;
+    font-size: 25px;
+}
+
+#service h2 {
+    line-height: 166px;
+}
+
+#button-wrapper {
+    display: flex;
+}
+
+#promotional-button, #quote-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #4269ff;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
