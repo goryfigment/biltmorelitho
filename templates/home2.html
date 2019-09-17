@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biltmore Litho</title>
+    <link rel='shortcut icon' type='image/x-icon' href="{% static 'bundle/assets/logo.ico' %}" />
+</head>
+<body>
+    <div id="header-wrapper">
+        <img src="{% static 'bundle/assets/biltmorelithologo.jpg' %}" />
+        <nav>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </nav>
+    </div>
+
+    <div class="parallax"></div>
+
+    <div id="mission-section">
+        <img src="{% static 'bundle/assets/about.jpg' %}" />
+        <div id="mission-details">
+            <h2>Mission</h2>
+            <p>The corner stone of Biltmore Litho's success has always been Great Personal Service, On Time Deliveries, a Quality Product, and Competitive Pricing... and if for any reason Biltmore Litho makes an error on an order we immediately prioritize the job and rerun with no excuses at zero cost to the customer.</p>
+        </div>
+    </div>
+
+    <div id="services-section">
+        <div id="service-details">
+            <h2>Services</h2>
+            <ul>
+                <li>Business Cards</li>
+                <li>Brochures</li>
+                <li>Newsletters</li>
+                <li>Stationery</li>
+                <li>Continuous & NCR Forms</li>
+                <li>Booklets</li>
+                <li>Pamphlets</li>
+                <li>Digital & Offset Printing</li>
+            </ul>
+        </div>
+        <img src="{% static 'bundle/assets/services.png' %}" />
+    </div>
+
+    <div id="contact-section">
+        <span id="phone-icon"><i class="fas fa-phone"></i></span>
+        <div id="contact-details">
+            <h2>Contact</h2>
+            <p>Phone: (602)263-5637</p>
+            <p>Email address: <a href="mailto:biltmorelitho@gmail.com">biltmorelitho@gmail.com</a></p>
+        </div>
+    </div>
+
+    <%= require('html-loader!./partial/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,133 @@
+#header-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: white;
+}
+
+#header-wrapper nav {
+    line-height: 111px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    color: #2aafc0;
+    font-size: 18px;
+}
+
+#header-wrapper li {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+}
+
+#header-wrapper li:hover {
+    color: #3184C0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url(/templates/bundle/assets/home.jpg);
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mission-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 50px 15px;
+}
+
+#mission-details {
+    width: 300px;
+    color: #333438;
+    text-align: center;
+}
+
+h2 {
+    margin: 25px 0;
+    color: #2f2f2f;
+}
+
+#mission-details p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+#services-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    background: #d3e3f2;
+    padding: 50px 15px;
+}
+
+#contact-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 50px 15px;
+}
+
+#phone-icon {
+    font-size: 175px;
+    color: #2a363c;
+}
+
+#contact-section p {
+    font-size: 19px;
+}
+
+/*Footer*/
+#footer-wrapper div {
+    margin: 1px 0;
+}
+
+#footer-wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#footer-wrapper {
+    text-align: center;
+    padding: 15px;
+    background: #333333;
+    color: white;
+}
+
+#footer-wrapper p {
+    margin: 10px 0;
+    font-size: 11px;
+}
+/*Footer*/

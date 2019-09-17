@@ -7,4 +7,4 @@ def main(request):
         'base_url': get_base_url()
     }
 
-    return render(request, 'home.html', data)
+    return render(request, 'home2.html', data)

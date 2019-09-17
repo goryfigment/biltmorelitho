@@ -1,40 +1,23 @@
-@font-face {
-    font-family: Karla;
-    src: url(/templates/bundle/assets/fonts/Karla-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
+    #home-points {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: -webkit-fit-content !important;
+        height: -moz-fit-content !important;
+        height: fit-content !important;
+    }
+
+    .icon-wrapper {
+        width: auto !important;
+        margin: 15px 0 !important;
+
+    }
 }
 
-@font-face {
-    font-family: Karla;
-    src: url(/templates/bundle/assets/fonts/Karla-Italic.ttf);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Karla;
-    src: url(/templates/bundle/assets/fonts/Karla-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Karla;
-    src: url(/templates/bundle/assets/fonts/Karla-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-body {
-    font-family: 'Karla', Arial, Helvetica, sans-serif, Georgia, serif;
-    margin: 0 auto;
-    min-height: 100vh;
-    max-width: 100vw;
-    color: #f8f8f8;
-    background: #242424;
-    overflow-x: hidden;
-}
 
 #header-wrapper {
     display: -webkit-box;
@@ -116,38 +99,7 @@ body {
     margin: 10px 0;
     font-size: 11px;
 }
-/*Footer*//* Mobile Styles */
-@media only screen and (max-width: 420px) {
-    #home-points {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        height: -webkit-fit-content !important;
-        height: -moz-fit-content !important;
-        height: fit-content !important;
-    }
-
-    .icon-wrapper {
-        width: auto !important;
-        margin: 15px 0 !important;
-
-    }
-}
-
-/* Tablet Styles */
-/*@media only screen and (min-width: 421px) and (max-width: 960px) {*/
-    /*#home-points {*/
-        /*flex-direction: column;*/
-        /*height: 100%;*/
-    /*}*/
-
-    /*.icon-wrapper {*/
-        /*width: auto;*/
-        /*margin: 15px 0;*/
-    /*}*/
-/*}*/
+/*Footer*/
 
 #first-wrapper {
     width: 100%;

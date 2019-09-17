@@ -10,7 +10,8 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 module.exports = {
     //context: __dirname,
     entry: {
-        home: './templates/js/home.js'
+        home: './templates/js/home.js',
+        home2: './templates/js/home2.js'
     },
     output: {path: __dirname + '/templates/bundle', filename: 'js/[name].js', publicPath: '/templates/bundle/'},
     module: {
@@ -33,7 +34,8 @@ module.exports = {
         //}),
 
         //HTML
-        new HtmlWebpackPlugin({filename: 'home.html', chunks: ['vendors','home'], minify: {collapseWhitespace: true}, hash: true, template: './templates/home.html'})
+        new HtmlWebpackPlugin({filename: 'home.html', chunks: ['vendors','home'], minify: {collapseWhitespace: true}, hash: true, template: './templates/home.html'}),
+        new HtmlWebpackPlugin({filename: 'home2.html', chunks: ['vendors','home2'], minify: {collapseWhitespace: true}, hash: true, template: './templates/home2.html'}),
     ],
     resolve: {
         alias: {
