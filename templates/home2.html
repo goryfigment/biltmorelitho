@@ -8,16 +8,23 @@
 </head>
 <body>
     <div id="header-wrapper">
-        <img src="{% static 'bundle/assets/biltmorelithologo.jpg' %}" />
+        <img src="{% static 'bundle/assets/biltmorelitho.jpg' %}" />
+        <span id="menu"><i class="fas fa-bars"></i></span>
         <nav>
             <li>Home</li>
             <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li id="service-link">Services</li>
+            <li id="contact-link">Contact</li>
         </nav>
     </div>
 
-    <div class="parallax"></div>
+    <div class="parallax">
+        <div id="biltmore-text">Biltmore Litho</div>
+        <div id="button-wrapper">
+            <button id="contact-button">Contact</button>
+            <button id="promotional-button">Promotional</button>
+        </div>
+    </div>
 
     <div id="mission-section">
         <img src="{% static 'bundle/assets/about.jpg' %}" />
@@ -49,7 +56,7 @@
         <div id="contact-details">
             <h2>Contact</h2>
             <p>Phone: (602)263-5637</p>
-            <p>Email address: <a href="mailto:biltmorelitho@gmail.com">biltmorelitho@gmail.com</a></p>
+            <p>Email: <a href="mailto:biltmorelitho@gmail.com">biltmorelitho@gmail.com</a></p>
         </div>
     </div>
 

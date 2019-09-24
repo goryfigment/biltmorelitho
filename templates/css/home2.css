@@ -1,18 +1,105 @@
+@media only screen and (max-width: 610px) {
+    #menu {
+        display: inline-block !important;
+    }
+
+    #header-wrapper {
+        max-width: 600px;
+    }
+
+    #header-wrapper nav {
+        display: none;
+    }
+
+    #header-wrapper img {
+        transform: scale(0.9);
+    }
+
+    #header-wrapper.active nav {
+        line-height: 50px !important;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    #header-wrapper li {
+        margin: 0;
+    }
+
+    #mission-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services-section img {
+        transform: scale(0.8);
+    }
+
+    #contact-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+button {
+    border: 1px #fff solid;
+    outline: none;
+    background: #ededed;
+    padding: 10px;
+    border-radius: 2px;
+    font-variant: small-caps;
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+#promotional-button {
+    background: #6bbed0;
+    color: white;
+    border: 1px #adc5ca solid;
+}
+
+#biltmore-text {
+    font-variant: small-caps;
+    color: #84fff5;
+    text-align: center;
+    font-size: 75px;
+    padding: 85px 0;
+}
+
+#button-wrapper {
+    text-align: center;
+}
+
 #header-wrapper {
     display: flex;
     background: white;
+    color: #2aafc0;
+    flex-wrap: wrap;
+    transition: all 0.4s ease-in-out;
+}
+
+#header-wrapper img {
+    margin: 10px 40px;
+    transition: 0.5s ease all;
 }
 
 #header-wrapper nav {
-    line-height: 111px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    color: #2aafc0;
-    font-size: 18px;
+    line-height: 125px;
+    font-size: 20px;
+    margin-left: auto;
+    font-variant: small-caps;
 }
 
 #header-wrapper li {
+    margin: 0 15px;
     cursor: pointer;
     display: inline-block;
     transition: 0.5s ease all;
@@ -20,6 +107,31 @@
 
 #header-wrapper li:hover {
     color: #3184C0;
+}
+
+#menu:hover {
+    color: #3184C0;
+}
+
+#menu {
+    display: none;
+    line-height: 125px;
+    font-size: 35px;
+    margin-left: auto;
+    padding: 0 35px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: calc(100% - 280px);
+    text-align: right;
+}
+
+.active nav {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.mobile #menu {
+    display: block;
 }
 
 .parallax {

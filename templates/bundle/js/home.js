@@ -1,1 +1,1 @@
-webpackJsonp([1],[,,,function(n,exports,c){c(1),c(4),c(2)},function(n,exports){}],[3]);
+webpackJsonp([1],[,,,function(n,exports,c){c(1),c(4),c(2),$(document).ready(function(){$(document).on("click","#menu",function(){$(this).closest("#")})})},function(n,exports){}],[3]);
