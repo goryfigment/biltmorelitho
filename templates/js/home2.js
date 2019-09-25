@@ -27,6 +27,11 @@ $(document).ready(function() {
         }
     });
 
+    $(document).on('click', '#about-link', function (e) {
+        e.stopPropagation();
+        scrollTo(document.getElementById('mission-section'));
+    });
+
     $(document).on('click', '#service-link', function (e) {
         e.stopPropagation();
         scrollTo(document.getElementById('services-section'));
@@ -35,5 +40,10 @@ $(document).ready(function() {
     $(document).on('click', '#contact-link, #contact-button', function (e) {
         e.stopPropagation();
         scrollTo(document.getElementById('contact-section'));
+    });
+
+    $(document).on('click', '#promotional-button', function (e) {
+        e.stopPropagation();
+        window.open('https://papco.dcpromosite.com/p/catalog');
     });
 });
