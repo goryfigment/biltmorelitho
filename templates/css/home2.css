@@ -1,3 +1,9 @@
+@media only screen and (max-width: 820px) {
+    #header-wrapper h1 {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 610px) {
     #menu {
         display: inline-block !important;
@@ -47,6 +53,16 @@
     }
 }
 
+h1 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 120px;
+    font-size: 35px;
+    margin-left: -68px;
+    position: relative;
+    z-index: 1;
+}
+
 button {
     border: 1px #fff solid;
     outline: none;
@@ -56,7 +72,7 @@ button {
     font-variant: small-caps;
     cursor: pointer;
     color: #555;
-    font-size: 16px;
+    font-size: 22px;
     margin: 0 20px;
 }
 
@@ -70,7 +86,7 @@ button {
     font-variant: small-caps;
     color: #84fff5;
     text-align: center;
-    font-size: 75px;
+    font-size: 115px;
     padding: 85px 0;
 }
 
@@ -150,24 +166,35 @@ button {
 
 #mission-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 50px 15px;
+}
+
+#mission-section img {
+    padding: 0 70px;
 }
 
 #mission-details {
     width: 300px;
     color: #333438;
     text-align: center;
+    padding: 0 70px;
 }
 
 h2 {
     margin: 25px 0;
     color: #2f2f2f;
+    font-size: 35px;
 }
 
 #mission-details p {
-    font-size: 18px;
+    font-size: 25px;
     font-style: italic;
+    width: 350px;
+}
+
+#service-details ul {
+    font-size: 25px;
 }
 
 #services-section {
@@ -189,7 +216,7 @@ h2 {
 }
 
 #contact-section p {
-    font-size: 19px;
+    font-size: 23px;
 }
 
 /*Footer*/
